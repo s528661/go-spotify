@@ -35,8 +35,7 @@ func main() {
 	httpClient := spotifyauth.New().Client(ctx, token)
 	client := spotify.New(httpClient)
 
-	// The BeatlesのSpotify IDを指定
-	result, err := client.GetRelatedArtists(ctx, "3WrFJ7ztbogyGnTHbHJFl2")
+	result, err := client.GetRelatedArtists(ctx, "3cbd5GWGOknxmFAe77MDbk")
 	if err != nil {
 		log.Fatal(err)
 	}
